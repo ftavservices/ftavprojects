@@ -60,6 +60,7 @@ nav a:hover {
     padding: 40px 20px; /* Aumenta el padding para más espacio vertical */
     text-align: center;
     flex-grow: 1; /* Permite que el contenedor ocupe el espacio restante */
+    color:#000000;
 }
 
 h2 {
