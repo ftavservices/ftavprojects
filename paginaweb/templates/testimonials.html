@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonios - FTAV Services</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>FTAV Services</h1>
+</header>
+
+<nav>
+    <a href="{{ url_for('home') }}">Inicio</a>
+    <a href="{{ url_for('services') }}">Servicios</a>
+    <a href="{{ url_for('testimonials') }}">Testimonios</a>
+    <a href="{{ url_for('contact') }}">Contacto</a>
+</nav>
+
+<div class="container">
+    <h2>Lo que nuestros clientes dicen</h2>
+    <p>"FTAV Services transformó nuestra plataforma digital. ¡Estamos muy satisfechos con su trabajo!" - Cliente A</p>
+    <p>"Su enfoque profesional y la entrega a tiempo fue increíble. Los recomiendo al 100%." - Cliente B</p>
+</div>
+
+<footer>
+    <p>&copy; 2024 FTAV Services - Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

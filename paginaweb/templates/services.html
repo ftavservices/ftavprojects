@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - FTAV Services</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>FTAV Services</h1>
+</header>
+
+<nav>
+    <a href="{{ url_for('home') }}">Inicio</a>
+    <a href="{{ url_for('services') }}">Servicios</a>
+    <a href="{{ url_for('testimonials') }}">Testimonios</a>
+    <a href="{{ url_for('contact') }}">Contacto</a>
+</nav>
+
+<div class="container">
+    <h2>Nuestros Servicios</h2>
+    <p>Ofrecemos los siguientes servicios:</p>
+    <ul>
+        <li>Desarrollo de aplicaciones web</li>
+        <li>Automatización de procesos</li>
+        <li>Integración de bases de datos</li>
+        <li>Consultoría tecnológica</li>
+    </ul>
+</div>
+
+<footer>
+    <p>&copy; 2024 FTAV Services - Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

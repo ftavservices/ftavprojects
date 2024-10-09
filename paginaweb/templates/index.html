@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FTAV Services - Servicios de Software</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>FTAV Services</h1>
+    <p>Soluciones de software a medida para su negocio</p>
+</header>
+
+<nav>
+    <a href="{{ url_for('home') }}">Inicio</a>
+    <a href="{{ url_for('services') }}">Servicios</a>
+    <a href="{{ url_for('testimonials') }}">Testimonios</a>
+    <a href="{{ url_for('contact') }}">Contacto</a>
+</nav>
+
+<div class="container">
+    <h2>Bienvenidos a FTAV Services</h2>
+    <p>Ofrecemos una amplia gama de servicios de desarrollo de software, desde aplicaciones personalizadas hasta soluciones empresariales.</p>
+    <button onclick="window.location.href='{{ url_for('contact') }}'">Contáctanos</button>
+</div>
+
+<footer>
+    <p>&copy; 2024 FTAV Services - Todos los derechos reservados.</p>
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    </div>
+</footer>
+
+</body>
+</html>
+
