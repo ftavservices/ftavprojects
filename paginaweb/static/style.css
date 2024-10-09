@@ -5,18 +5,38 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el body tenga al menos la altura de la ventana */
 }
 
 header {
-    background-color: #007bff;
+    background-color: #4378d9;
     color: white;
     padding: 20px;
-    text-align: center;
+    display: flex; /* Usamos flexbox */
+    align-items: center; /* Centra el logo verticalmente */
+}
+
+.logo {
+    width: 150px; /* Ajusta el tamaño según sea necesario */
+    height: auto; /* Mantiene la proporción del logo */
+    margin-right: 20px; /* Espaciado a la derecha del logo */
+}
+
+.header-text {
+    flex-grow: 1; /* Permite que el contenedor del texto ocupe el espacio disponible */
+    text-align: center; /* Centra el texto */
+    padding-right: 170px; /* Espaciado a la izquierda del texto */
 }
 
 h1 {
     margin: 0;
     font-size: 3rem;
+}
+
+p {
+    margin: 5px 0 0; /* Margen entre el título y el subtítulo */
 }
 
 nav {
@@ -33,27 +53,29 @@ nav a {
 }
 
 nav a:hover {
-    color: #007bff;
+    color: #4378d9;
 }
 
 .container {
-    padding: 20px;
+    padding: 40px 20px; /* Aumenta el padding para más espacio vertical */
     text-align: center;
+    flex-grow: 1; /* Permite que el contenedor ocupe el espacio restante */
 }
 
 h2 {
     margin-top: 20px;
-    color: #007bff;
+    color: #4378d9;
 }
 
 button {
-    background-color: #007bff;
+    background-color: #4378d9;
     border: none;
     color: white;
     padding: 15px 30px;
     font-size: 1.2rem;
     cursor: pointer;
     border-radius: 5px;
+    margin-top: 20px; /* Espacio vertical adicional antes del botón */
 }
 
 button:hover {
@@ -62,17 +84,15 @@ button:hover {
 
 footer {
     background-color: #f1f1f1;
-    padding: 10px 0;
+    padding: 20px 0; /* Aumenta el padding para más espacio */
     text-align: center;
     color: #555;
-    position: relative;
-    bottom: 0;
     width: 100%;
 }
 
 .social-icons a {
     margin: 0 10px;
-    color: #007bff;
+    color: #4378d9;
     font-size: 1.5rem;
     text-decoration: none;
 }
@@ -97,7 +117,7 @@ input, textarea {
 }
 
 input[type="submit"] {
-    background-color: #007bff;
+    background-color: #4378d9;
     color: white;
     border: none;
     cursor: pointer;
